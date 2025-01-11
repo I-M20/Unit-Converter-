@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="UC.css" />
+    </head>
+    <body>
+        <h1>Unit Converter</h1>
+    <div id="UnitConForm">
+        <form target = "_self" method ="post">
+            <div id="MainUnits">
+                <label for="From">Enter the value to convert</label><br>
+                <input type="number" id="inputValue" name="inputValue" required>
+                <br>
+                <br>
+                <label for="category">Category Selection</label><br>
+                <select id="category">
+                    <option value="length">Length</option>
+                    <option value="weight">Weight</option>
+                    <option value="temperature">Temperature</option>
+                </select>
+            </div>
+            <div id="LenghtUnits2BConv">
+                <br><label for="From">Unit to convert from</label><br>
+                <select name="LUFrom" id="LUFrom">
+                </select>
+                <br>
+                <br>
+                <label for="To">Unit to convert to</label><br>
+                <select name="LUTo" id="LUTo">
+                </select>
+                <br>
+                <br>
+                <button type="submit" id="submitconv">Convert</button>
+                <p id="resultarea">Result</p>
+            </div>
+        </form>
+    </div>
+    <script src = UCF.js></script>
+    </body>
+</html>
